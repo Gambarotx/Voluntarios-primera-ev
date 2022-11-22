@@ -1,0 +1,15 @@
+def Hacer_tu_contraseña():
+    contraseña = input("Introduce tu contraseña: ")
+    if contraseña.islower() or contraseña.isupper():
+        print("No cumple el criterio de tener mayúsculas y minúsculas. ")
+    else:
+        print("Cumple el criterio de tener mayúsculas y minúsculas. ")
+    if len(contraseña) <8:
+        print("No tiene el minimo de caracteres requeridos. ")
+    else:
+        print("Cumple con el minimo de caracteres obligatorios. ")
+    if contraseña.isalpha():
+        print("No tiene el minimo de numeros obligatorios. ")
+    else:
+        print("Cumple con el minimo de numeros requeridos")
+hacer_tu_contraseña()
