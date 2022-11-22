@@ -20,10 +20,15 @@ def calcular_evau():
     n5=int(input("Ahora introduce tu nota media en bachillerato: "))
     print("tu nota de acceso es: ")
     print((media*0.4)+(n5*0.6))
-    
     if (((media*0.4)+(n5*0.6))>5):
         print("¡¡Enorabuena, has aprovado la EVAU!! :))))) ")
     if(((media*0.4)+(n5*0.6))<5):
         print("Vaya, no has aprovado la EVAU  :(((((( ")
+        
+    n6=0 
+    print("Ahora pasemos a la fase voluntaria, ")
+    n6=int(input("primero dime cuantos exámanes de la fase voluntaria quieres hacer, 1 o 2"))
+    if(n6==1):
+        print("hshsd")
     
 calcular_evau()
