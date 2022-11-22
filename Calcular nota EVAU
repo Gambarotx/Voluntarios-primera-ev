@@ -1,0 +1,29 @@
+def calcular_evau():
+    print("Vamos a calcular tu nota de la EVAU, para empezar introduce tu nota de las fases obligatirias: ")
+    n1=0
+    n2=0
+    n3=0
+    n4=0
+    n1=int(input("Introduce tu nota de Ingles (o Frances): "))
+    n2=int(input("Introduce tu nota de Lengua:"))
+    n3=int(input("Introduce tu nota de Matematicas:"))
+    n4=int(input("Introduce tu nota de Historia: "))
+    suma=n1+n2+n3+n4
+    media=suma/4
+    print("Esta es tu nota media en la fase obligatoria")
+    print(media) 
+    if (media >4):
+        print("Como tu media es mayor que 4, tu nota pondera con la media de Bachillerato ") 
+    if (media<4):
+        print("Como tu media es menor que 4, tu nota no pondera con bachillerato")
+    n5=0
+    n5=int(input("Ahora introduce tu nota media en bachillerato: "))
+    print("tu nota de acceso es: ")
+    print((media*0.4)+(n5*0.6))
+    
+    if (((media*0.4)+(n5*0.6))>5):
+        print("¡¡Enorabuena, has aprovado la EVAU!! :))))) ")
+    if(((media*0.4)+(n5*0.6))<5):
+        print("Vaya, no has aprovado la EVAU  :(((((( ")
+    
+calcular_evau()
